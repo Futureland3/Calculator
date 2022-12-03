@@ -10,31 +10,59 @@
 </head>
 <body>
     <div class="structure">
-        <div class="display">0</div>
+        <div class="display" id="lol"> <!--button onclick, put number here,
+             then when equal is pressed, function operate()-->
+            <output type="text" id="result">0</output>
+        </div>
         <div class="container">
-            <input type="reset" value="Clear" id="clear">
-            <input type="button" value="⌫" id="delete">
-            <input type="button" value="÷" class="symbol">
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="x" class="symbol">
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-" class="symbol">
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="+" class="symbol">
-            <input type="button" value="0" id="zero">
-            <input type="button" value=".">
-            <input type="button" value="=" class="symbol" id="equal">
+            <button class="symbol" id="clear">Clear</button>
+            <button class="symbol" id="delete">⌫</button>
+            <button class="symbol" data-operator>÷</button>
+            <button class="number" data-number>7</button>
+            <button class="number" data-number>8</button>
+            <button class="number" data-number>9</button>
+            <button class="symbol" data-operator>x</button>
+            <button class="number" data-number>4</button>
+            <button class="number" data-number>5</button>
+            <button class="number" data-number>6</button>
+            <button class="symbol" data-operator>-</button>
+            <button class="number" data-number>1</button>
+            <button class="number" data-number>2</button>
+            <button class="number" data-number>3</button>
+            <button class="symbol" data-operator>+</button>
+            <button class="number" id="zero" data-number>0</button>
+            <button class="number" id="dot" data-number>.</button>
+            <button class="symbol" id="equal">=</button>
         </div>
     </div>
     <div class="footer">
-        <p>Copyright © 2022 Futureland3</p>
+        <p>Copyright © </p>
+        <script>
+            document.write(new Date().getFullYear())
+        3</script>
+        <p> Futureland3</p>
         <a href="https://github.com/Futureland3" target="_blank" class="link"> <img src="github_logo.png" id="logo"></a>
     </div>
 </body>
 </html>
+
+
+
+<!-- <table>
+
+    <tr>
+    <input type="button" value="6" class="button" onClick="display('6')"></input>
+
+
+        <td colspan="3"><input type='text' id='result' class ='display'></td>
+
+    </tr>
+
+</table>
+<table>
+<td>
+
+    <input type='button' value = 'C' onclick="clearScreen()" class="clear"/>
+
+</td>
+</table> -->

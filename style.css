@@ -10,7 +10,7 @@ body {
     background-color: rgb(203, 203, 203);
 }
 
-input {
+button {
     width: 100px;
     height: 100px;
     padding: 10px;
@@ -21,7 +21,7 @@ input {
     font-family: 'Roboto Thin';   
 }
 
-input:active {
+button:active {
     background-color: rgb(180, 180, 180);
 }
 
@@ -58,23 +58,23 @@ input:active {
 
 }
 
-#zero {
+button#zero {
     border-bottom-left-radius: 25px ;
 }
 
-#clear, #zero {
+button#clear, button#zero {
     width:200px;
 }
 
-#clear, #delete {
+button#clear, button#delete {
     background-color: rgb(67, 67, 67);
 }
 
-#clear:active, #delete:active {
+button#clear:active, button#delete:active {
     background-color: gray;
 }
 
-#equal {
+button#equal {
     border-bottom-right-radius: 25px;
 }
 
@@ -92,8 +92,10 @@ input:active {
     font-size: 25px;
     justify-content: space-around;
     gap: 10px;
-    position: absolute;
+    position:relative;
     bottom: 0;
+    margin-top: 40px;
+    align-items: center;
 }
 
 #logo {
