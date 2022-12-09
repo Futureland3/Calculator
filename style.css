@@ -38,8 +38,8 @@ button:active {
 }
 
 .display {
-    width: 340px;
-    height: 140px;
+    /* width: 340px;
+    height: 120px; */
     /* border:30px; */
     display: flex;
     justify-content:flex-end;
@@ -49,14 +49,22 @@ button:active {
     color: white;
     font-size: 80px;
     font-family: 'Roboto Thin';
+    flex-wrap:wrap;
+    flex-direction:column;
+    margin-left: auto;
+    height: 176px;
 }
 
 .container {
     width: 400px;
     display: flex;
     flex-wrap: wrap;
-
 }
+
+/* #result {
+    display: flex;
+    flex-wrap: wrap;
+} */
 
 button#zero {
     border-bottom-left-radius: 25px ;
@@ -94,7 +102,7 @@ button#equal {
     gap: 10px;
     position:relative;
     bottom: 0;
-    margin-top: 40px;
+    margin-top: 10px;
     align-items: center;
 }
 
@@ -114,4 +122,9 @@ button#equal {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#previousNumber {
+    font-size: 70px;
+    color:gray;
 }
